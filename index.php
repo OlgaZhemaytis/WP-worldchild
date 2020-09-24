@@ -359,18 +359,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="title contacts__minititle">Оставьте ваш отзыв</div>
-                        <form action="#" class="contacts__feed">
-                            <label for="feedname">
-                                Ваше имя <span>*</span>
-                            </label>
-                            <input required type="text" id="feedname" name="feedname">
-
-                            <label for="feedtext">
-                                Ваш отзыв <span>*</span>
-                            </label>
-                            <textarea required name="feedtext" id="feedtext"></textarea>
-                            <button class="minibutton">Отправить</button>
-
+                        <div class="contacts__feed">
+						<?php echo do_shortcode ('[contact-form-7 id="119" title="Форма отзывов"]'); ?>
+						</div>
                             <svg class="lds-spinner" width="65px"  height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;"><g transform="rotate(0 50 50)">
                                     <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#013476">
                                     <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
@@ -439,7 +430,7 @@
                                 </style>
                             </svg>
 
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="row mt70">
